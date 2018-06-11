@@ -44,14 +44,14 @@
                     <div class="game-inputs">
                         <div class="game-scoreInput">
                             <input v-model="game.predictionScoreTeamA" @change="setPredictionUnsaved(game)"
-                                    class="game-scoreInputField" type="number" name="goalsTeamA"
+                                    class="game-scoreInputField" type="number" name="goalsTeamA" min="0"
                                     onfocus="this.select()"
                                     :disabled="isSubmissionClosed(game)"/>
                         </div>
                         <div class="game-scoreInput"><!-- Dummy element to align flex items --></div>
                         <div class="game-scoreInput">
                             <input v-model="game.predictionScoreTeamB" @change="setPredictionUnsaved(game)"
-                                    class="game-scoreInputField" type="number" name="goalsTeamB"
+                                    class="game-scoreInputField" type="number" name="goalsTeamB" min="0"
                                     onfocus="this.select()"
                                     :disabled="isSubmissionClosed(game)"/>
                         </div>
